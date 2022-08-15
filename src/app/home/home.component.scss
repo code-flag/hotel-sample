@@ -1,0 +1,380 @@
+.page-wrapper {
+  background-color: #f3f3f3;
+  font-family: "Poppins";
+  overflow: hidden;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  // border-bottom: 4px solid rgba(180, 180, 180, 0.75);
+  // box-shadow: 10 5px 15px 5px rgba(180, 180, 180, 0.75);
+  padding: 5px 0;
+    .menu-icon {
+        display: none;
+    }
+  .logo {
+    align-self: center;
+    padding: 10px;
+    border: 1px solid #000;
+    .t1 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-transform: uppercase;
+      color: #ee5940;
+      font-weight: bold;
+      font-size: 26px;
+    }
+    .t2 {
+      font-family: "Poppins";
+      text-transform: uppercase;
+      color: #832717;
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+  .social-icons {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    ul {
+      list-style: none;
+      margin: auto;
+
+      li {
+        list-style: none;
+        float: left;
+        padding: 10px;
+        margin: 0px 15px;
+        min-width: 80px;
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          color: #333;
+        }
+        &.current {
+          border-bottom: 5px solid #aa270f;
+          a {
+            
+          color: #aa270f;
+          }
+        }
+        &:hover {
+          background-color: transparent;
+          border-bottom: 5px solid #aa270f;
+
+          a {
+            color: #ee5940;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-area {
+  display: flex;
+  flex-direction: column;
+  // background-color: rgba(0, 0, 0, 0.75);
+  background-image: url(../../assets/images/bg1.jpg);
+  color: #fff;
+  height: 300px;
+  padding: 100px;
+
+  .caption {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .sub-caption {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .button {
+    margin-top: 30px;
+    background-color: #ee5940;
+    color: #fff;
+    padding: 12px 20px;
+    max-width: 100px;
+    text-align: center;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid #ee5940;
+      color: #ee5940;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .main {
+    margin-top: -100px;
+    width: 72%;
+    .top-card-wrapper {
+      width: 100%;
+      background-color: #ee5940;
+      padding-top: 50px;
+      overflow: hidden;
+      h2 {
+        background-color: #eee;
+        padding: 10px;
+        margin: unset;
+        text-align: center;
+      }
+
+      .inner-card-wrapper {
+        background-color: #fff;
+        width: 98%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .card {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-self: center;
+          flex-direction: column;
+          max-width: 250px;
+          min-width: 100px;
+          min-height: 250px;
+          background-color: #eee;
+          box-shadow: 0px 2px 20px 2px #ccc;
+          margin: 20px 15px;
+          padding: 10px;
+          overflow: hidden;
+
+          &:hover {
+            transition: 0.4s;
+            transform: scale(1.05);
+
+            .icon {
+              transition: 0.55s;
+
+              background-color: #ee5940;
+              color: #eee;
+            }
+            .title {
+              color: #e43d20;
+            }
+          }
+
+          img {
+            width: 100%;
+          }
+
+          .icon {
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            background-color: #fff;
+            color: #ee5940;
+            font-size: 32px;
+            border-radius: 50%;
+            padding: 5px;
+            text-align: center;
+          }
+          .title {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+          }
+          .content {
+            padding: 5px;
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .toolbar {
+        justify-content: space-between;
+        .menu-icon {
+            display: block;
+            padding-right: 15px;
+            margin-left: 20px;
+            font-size: 28px;
+
+        }
+        .logo {
+          align-self: center;
+          padding: 10px;
+          border: 1px solid #000;
+          .t1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-transform: uppercase;
+            color: #ee5940;
+            font-weight: bold;
+            font-size: 22px;
+          }
+          .t2 {
+            font-family: "Poppins";
+            text-transform: uppercase;
+            color: #832717;
+            font-weight: 600;
+            font-size: 16px;
+          }
+        }
+        .social-icons {
+          align-self: center;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+        .nav-links {
+          display: none;
+        }
+      }
+      
+      .header-area {
+        display: flex;
+        flex-direction: column;
+        // background-color: rgba(0, 0, 0, 0.75);
+        background-image: url(../../assets/images/bg1.jpg);
+        color: #fff;
+        height: 300px;
+        padding: 50px;
+      
+        .caption {
+          font-size: 38px;
+          font-weight: bold;
+        }
+        .sub-caption {
+          margin-top: 20px;
+          font-size: 16px;
+          font-weight: 400;
+          text-transform: capitalize;
+        }
+        .button {
+          margin-top: 20px;
+          background-color: #ee5940;
+          color: #fff;
+          padding: 8px 15px;
+          max-width: 80px;
+          text-align: center;
+          border-radius: 20px;
+      
+          &:hover {
+            background-color: transparent;
+            border: 1px solid #ee5940;
+            color: #ee5940;
+          }
+        }
+      }
+      
+      .container {
+        .main {
+          margin-top: -60px;
+          width: 100%;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .top-card-wrapper {
+            width: 95%;
+            background-color: #ee5940;
+            padding-top: 50px;
+            overflow: hidden;
+            h2 {
+              background-color: #eee;
+              padding: 10px;
+              margin: unset;
+              text-align: center;
+            }
+      
+            .inner-card-wrapper {
+              background-color: #fff;
+              width: 92%;
+              padding: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              flex-wrap: wrap;
+              .card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                max-width: 85%;
+                background-color: #eee;
+                box-shadow: 0px 2px 20px 2px #ccc;
+                margin: 20px 0px;
+                padding: 10px;
+                overflow: hidden;
+      
+                &:hover {
+                  transition: 0.4s;
+                  transform: scale(1.05);
+      
+                  .icon {
+                    transition: 0.55s;
+      
+                    background-color: #ee5940;
+                    color: #eee;
+                  }
+                  .title {
+                    color: #e43d20;
+                  }
+                }
+      
+                img {
+                  width: 100%;
+                }
+      
+                .icon {
+                  width: 50px;
+                  height: 50px;
+                  overflow: hidden;
+                  background-color: #fff;
+                  color: #ee5940;
+                  font-size: 32px;
+                  border-radius: 50%;
+                  padding: 5px;
+                  text-align: center;
+                }
+                .title {
+                  width: 100%;
+                  padding: 5px;
+                  font-size: 16px;
+                  font-weight: 700;
+                  text-align: center;
+                }
+                .content {
+                  padding: 5px;
+                  font-size: 14px;
+                  color: #333;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+}
