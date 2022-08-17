@@ -1,0 +1,196 @@
+.header-area {
+  display: flex;
+  flex-direction: column;
+  // background-color: rgba(0, 0, 0, 0.75);
+  background-image: url(../../assets/images/bg0.jpg);
+  color: #fff;
+  height: 300px;
+  padding: 100px;
+
+  .caption {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .sub-caption {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .button {
+    margin-top: 30px;
+    background-color: #ff2259;
+    color: #fff;
+    padding: 12px 20px;
+    max-width: 100px;
+    text-align: center;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid #ff2259;
+      color: #ff2259;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .main {
+    margin-top: 50px;
+    width: 78%;
+
+    .card-wrapper {
+      width: 100%;
+      padding: 0;
+      margin: 20px 0;
+      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      overflow: hidden;
+        
+      .content-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        margin: 0;
+        padding: 30px;
+
+        .title {
+          width: 100%;
+          padding: 10px;
+          background-color: transparent;
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          font-size: 30px;
+          font-weight: bold;
+        }
+
+        .sub-title {
+          font-family: "Poppins";
+          font-size: 12px;
+          text-align: left;
+          color: #df5523;
+          align-self: flex-start;
+        }
+        .icons {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          width: 100%;
+        }
+        .text {
+          text-align: justify;
+          color: #333;
+          line-height: 1.5;
+          font-family: "Poppins"
+        }
+
+        .read-more {
+            font-weight: 500;
+            align-self: flex-end;
+            padding-right: 20px;
+            border: 1px solid #ff2259;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+
+            &:hover {
+                color: #ff2259;
+                border: none;
+                transition: 0.5s;
+                border-bottom: 1px solid #ff2259;
+            }
+        }
+      }
+
+      .image {
+        flex: 1;
+        margin: 0;
+        object-fit: contain;
+        overflow: hidden;
+        height: 400px;
+        img {
+            width: 100%;
+            height: auto;
+            background-size: cover;
+        }
+      }
+    }
+    
+  }
+}
+
+.card-wrapper:nth-child(odd){
+    .content-area {
+    order: 2;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .main {
+          margin-top: 50px;
+          width: 90%;
+      
+          .card-wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+              
+            .content-area {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              order: 1;
+              flex: 1;
+              margin: 0;
+      
+              .title {
+                width: 100%;
+                padding: 10px;
+              }
+      
+              .sub-title {
+                font-family: "Poppins";
+                font-size: 12px;;
+              }
+              .icons {
+                width: 100%;
+              }
+              .text {
+                text-align: justify;
+                font-family: "Poppins";
+
+              }
+      
+              .read-more {
+                  &:hover {
+                      
+                  }
+              }
+            }
+      
+            .image {
+              flex: 1;
+              max-height: 250px;
+              object-fit: contain;
+              .img {
+                width: 100%;
+            height: auto;
+            background-size: cover;
+              }
+            }
+          }
+          
+        }
+      }
+}

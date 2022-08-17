@@ -1,0 +1,232 @@
+
+.header-area {
+    display: flex;
+    flex-direction: column;
+    // background-color: rgba(0, 0, 0, 0.75);
+    background-image: url(../../assets/images/24trending-shophotels1-videoSixteenByNineJumbo1600.jpg);
+    height: 300px;
+    padding: 100px;
+  
+    .caption {
+      font-size: 40px;
+      font-weight: bold;
+      width: auto;
+      color: #000;
+    }
+    .sub-caption {
+      margin-top: 30px;
+      font-size: 16px;
+      font-weight: 400;
+      width: auto;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: #000;
+    }
+    .button {
+      margin-top: 30px;
+      background-color: #ff2259;
+      color: #fff;
+      padding: 12px 20px;
+      max-width: 100px;
+      text-align: center;
+      border-radius: 20px;
+  
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #ff2259;
+        color: #ff2259;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        width:80%;
+        overflow: hidden;
+        margin-top: 50px;
+        padding: 30px;
+        align-self: center;
+        justify-self: center;
+    
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: #f3f3f3;
+            box-shadow: 5px 5px 15px 10px #ddd;
+            flex: 1;
+            margin-right: 50px;
+    
+            input {
+                width: 90%;
+                padding: 10px 20px;
+                border: #333;
+                margin-top: 10px;
+            }
+            textarea {
+                margin-top: 20px;
+                padding: 10px;
+                width: 90%;
+                color: #333;
+                border: none;
+                outline: none;
+                box-shadow: 5px 5px 15px 10px #ddd inset;
+            }
+            .button {
+                max-width: 150px;
+                min-width: 100px;
+                text-align: center;
+                padding: 10px 20px;
+                background-color: #ff2259;
+                color: #000;
+                border-radius: 50px;
+                margin-top: 20px;
+            }
+        }
+    
+    
+        .contact-details {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            .add, .contact, h2 {
+                width: 100%;
+                padding: 10px;
+                color: #333;
+            }
+        }
+      }
+  }
+  
+
+
+  @media screen and (max-width: 750px) {
+    
+.header-area {
+    display: flex;
+    flex-direction: column;
+    // background-color: rgba(0, 0, 0, 0.75);
+    background-image: url(../../assets/images/24trending-shophotels1-videoSixteenByNineJumbo1600.jpg);
+    height: 300px;
+    padding: 100px;
+  
+    .caption {
+      font-size: 40px;
+      font-weight: bold;
+      width: auto;
+      color: #000;
+    }
+    .sub-caption {
+      margin-top: 30px;
+      font-size: 16px;
+      font-weight: 400;
+      width: auto;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: #000;
+    }
+    .button {
+      margin-top: 30px;
+      background-color: #ff2259;
+      color: #fff;
+      padding: 12px 20px;
+      max-width: 100px;
+      text-align: center;
+      border-radius: 20px;
+  
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #ff2259;
+        color: #ff2259;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width:100%;
+        overflow: hidden;
+        margin-top: 50px;
+        padding: 10px;
+        align-self: center;
+        justify-self: center;
+    
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            background-color: #f3f3f3;
+            box-shadow: 5px 5px 15px 10px #ddd;
+            margin-right: 50px;
+    
+            input {
+                width: 90%;
+                padding: 10px 20px;
+                border: #333;
+                margin-top: 10px;
+            }
+            textarea {
+                margin-top: 20px;
+                padding: 10px;
+                width: 90%;
+                color: #333;
+                border: none;
+                outline: none;
+                box-shadow: 5px 5px 15px 10px #ddd inset;
+            }
+            .button {
+                max-width: 150px;
+                min-width: 100px;
+                text-align: center;
+                padding: 10px 20px;
+                background-color: #ff2259;
+                color: #000;
+                border-radius: 50px;
+                margin-top: 20px;
+            }
+        }
+    
+    
+        .contact-details {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            .add, .contact, h2 {
+                width: 100%;
+                padding: 10px;
+                color: #333;
+                text-align: center;
+            }
+        }
+      }
+  }
+  
+  }

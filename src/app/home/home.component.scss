@@ -4,91 +4,12 @@
   overflow: hidden;
 }
 
-.toolbar {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  // border-bottom: 4px solid rgba(180, 180, 180, 0.75);
-  // box-shadow: 10 5px 15px 5px rgba(180, 180, 180, 0.75);
-  padding: 5px 0;
-    .menu-icon {
-        display: none;
-    }
-  .logo {
-    align-self: center;
-    padding: 10px;
-    border: 1px solid #000;
-    .t1 {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      text-transform: uppercase;
-      color: #ee5940;
-      font-weight: bold;
-      font-size: 26px;
-    }
-    .t2 {
-      font-family: "Poppins";
-      text-transform: uppercase;
-      color: #832717;
-      font-weight: 600;
-      font-size: 20px;
-    }
-  }
-  .social-icons {
-    align-self: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .nav-links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    ul {
-      list-style: none;
-      margin: auto;
-
-      li {
-        list-style: none;
-        float: left;
-        padding: 10px;
-        margin: 0px 15px;
-        min-width: 80px;
-        text-align: center;
-
-        a {
-          text-decoration: none;
-          color: #333;
-        }
-        &.current {
-          border-bottom: 5px solid #aa270f;
-          a {
-            
-          color: #aa270f;
-          }
-        }
-        &:hover {
-          background-color: transparent;
-          border-bottom: 5px solid #aa270f;
-
-          a {
-            color: #ee5940;
-          }
-        }
-      }
-    }
-  }
-}
 
 .header-area {
   display: flex;
   flex-direction: column;
   // background-color: rgba(0, 0, 0, 0.75);
-  background-image: url(../../assets/images/bg1.jpg);
+        background-image: url(../../assets/images/gallery-5.jpg);
   color: #fff;
   height: 300px;
   padding: 100px;
@@ -212,51 +133,11 @@
 }
 
 @media screen and (max-width: 720px) {
-    .toolbar {
-        justify-content: space-between;
-        .menu-icon {
-            display: block;
-            padding-right: 15px;
-            margin-left: 20px;
-            font-size: 28px;
-
-        }
-        .logo {
-          align-self: center;
-          padding: 10px;
-          border: 1px solid #000;
-          .t1 {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-transform: uppercase;
-            color: #ee5940;
-            font-weight: bold;
-            font-size: 22px;
-          }
-          .t2 {
-            font-family: "Poppins";
-            text-transform: uppercase;
-            color: #832717;
-            font-weight: 600;
-            font-size: 16px;
-          }
-        }
-        .social-icons {
-          align-self: center;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-        }
-        .nav-links {
-          display: none;
-        }
-      }
-      
+  
       .header-area {
         display: flex;
         flex-direction: column;
         // background-color: rgba(0, 0, 0, 0.75);
-        background-image: url(../../assets/images/bg1.jpg);
         color: #fff;
         height: 300px;
         padding: 50px;
