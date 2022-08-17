@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { faCoffee, faLayerGroup, faSplotch, faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -11,9 +12,14 @@ export class HomeComponent implements OnInit {
   faLayerGroup = faLayerGroup;
   faSplotch = faSplotch;
   faBars = faBars;
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
 
+  navigate(): void{
+    this.router.navigate(["/category"])
+  }
 }

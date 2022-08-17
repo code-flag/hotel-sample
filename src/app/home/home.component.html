@@ -10,7 +10,7 @@
         <div class="top-card-wrapper">
             <h2>Book now</h2>
             <div class="inner-card-wrapper">
-                <div class="card">
+                <div class="card" (click)="navigate()">
                     <div class="icon">
                         <fa-icon [icon]="faCoffee"></fa-icon>
                     </div>
@@ -19,7 +19,7 @@
                         Madison Square Garden, the fashion district and so much more. 
                         Our boutique hotrl has it all.</div>
                 </div>
-                <div class="card">
+                <div class="card" (click)="navigate()">
                     <div class="icon">
                         <fa-icon [icon]="faSplotch"></fa-icon>
                     </div>
@@ -28,7 +28,7 @@
                         in Koreatown, New York serving specialty drinks and handmade desserts.
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" (click)="navigate()">
                     <div class="icon">
                         <fa-icon [icon]="faLayerGroup"></fa-icon>
                     </div>
@@ -40,17 +40,29 @@
             </div>
             <h2>Explore great moment</h2>
             <div class="inner-card-wrapper">
-                <div class="card">
+                <div class="card" (click)="navigate()">
                     <img src="../../assets/images/room4.webp" alt="">
                     <div class="title">Suite Room</div>
+                    <div class="content">
+                        A plush king bed, luxury sheets, and thoughtful amenities make for a comfortable 
+                        and valuable stay in this approximately 280-square-foot Manhattan room.
+                    </div>
                 </div>
-                <div class="card">
+                <div class="card" (click)="navigate()">
                     <img src="../../assets/images/room2.jpg" alt="">
                     <div class="title">Deluxe Room</div>
+                    <div class="content">
+                        With a pillow-top king bed, roll-in shower, and approximately 280 
+                        square feet of space in this mobility-accessible room, you’ll be set for a great stay in the city.
+                    </div>
                 </div>
-                <div class="card">
+                <div class="card" (click)="navigate()">
                     <img src="../../assets/images/room5.webp" alt="">
                     <div class="title">Family Room</div>
+                    <div class="content">
+                        Expect comfort and relaxation for you and your traveling 
+                        companions in our approximately 300-square-foot standard rooms with two double beds.
+                    </div>
                 </div>
             </div>
         </div>

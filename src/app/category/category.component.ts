@@ -14,8 +14,8 @@ export class CategoryComponent implements OnInit {
   }
 
   
-  navigateToRiderPage(): void{
-    this.router.navigate(["/about"])
+  navigate(): void{
+    this.router.navigate(["/detail"])
   }
 
 }
