@@ -1,14 +1,40 @@
 <div class="toolbar">
     <div class="logo">
-        <img src="../../../assets/images/mountainlogo.JPG" alt="">
+        <img src="../../../assets/images/berenia-logo.png" alt="">
     </div>
-    <div class="social-icons"></div>
+    <div class="social-icons">
+            <ul>
+                <li><a href="#"><app-font-icon
+                    iconType="remix"
+                    iconName="facebook-fill"
+                    iconColor="#3b5998"
+                    iconSize="custom"
+                  ></app-font-icon></a></li>
+                <li><a href="#"><app-font-icon
+                    iconType="remix"
+                    iconName="twitter-fill"
+                    iconColor="#00acee"
+                    iconSize="custom"
+                  ></app-font-icon></a></li>
+                <li><a href="#"><app-font-icon
+                    iconType="remix"
+                    iconName="linkedin-fill"
+                    iconColor="#0072b1"
+                    iconSize="custom"
+                  ></app-font-icon></a></li>
+                <li><a href="#"><app-font-icon
+                    iconType="remix"
+                    iconName="instagram-line"
+                    iconColor="#d6249f"
+                    iconSize="custom"
+                  ></app-font-icon></a></li>
+            </ul>
+    </div>
     <div class="nav-links">
-        <ul>
+        <ul>            
             <li [class]="currentLinkNumber == 1 ? 'current' : '' " (click) = "navigate('home')"><a>Home</a></li>
-            <li [class]="currentLinkNumber == 2 ? 'current' : '' " (click) = "navigate('detail')"><a>Detail</a></li>
-            <li [class]="currentLinkNumber == 3 ? 'current' : '' " (click) = "navigate('category')"><a>Category</a></li>
-            <li [class]="currentLinkNumber == 4 ? 'current' : '' " (click) = "navigate('about')"><a>About</a></li>
+            <!-- <li [class]="currentLinkNumber == 3 ? 'current' : '' " (click) = "navigate('category')"><a>Category</a></li> -->
+            <li [class]="currentLinkNumber == 4 ? 'current' : '' " (click) = "navigate('about')"><a>About Us</a></li>
             <li [class]="currentLinkNumber == 5 ? 'current' : '' " (click) = "navigate('contact')"><a>Contact</a></li>
         </ul>
     </div>
@@ -19,8 +45,8 @@
     <div id="mySidenav" [class]="sideNavWidth ? 'sidenav open': 'sidenav close'">
         <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
         <a (click) = "navigate('home')">Home</a>
-        <a (click) = "navigate('detail')">Details</a>
-        <a (click) = "navigate('category')">Category</a>
+        <a (click) = "navigate('detail')">Our Services</a>
+        <!-- <a (click) = "navigate('category')">Category</a> -->
         <a (click) = "navigate('about')">About</a>
         <a  (click) = "navigate('contact')">contact</a>
     </div>

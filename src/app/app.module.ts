@@ -6,11 +6,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { CategoryComponent } from './category/category.component';
-import { DetailComponent } from './detail/detail.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { IconFontComponent } from './components/font/font.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -18,15 +18,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    CategoryComponent,
-    DetailComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    IconFontComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule
+    AppRoutingModule
   ],
   exports: [
     NavbarComponent,
@@ -34,8 +33,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    CategoryComponent,
-    DetailComponent
+    IconFontComponent,
+    ButtonComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

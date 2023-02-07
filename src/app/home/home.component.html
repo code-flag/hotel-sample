@@ -1,71 +1,169 @@
 <div class="page-wrapper">
-  <app-navbar currentLinkNumber='1'></app-navbar>
+  <!-- <div class="call-request">
+    Request a call back right now ? We work from 8am - 5pm
+  </div> -->
+  <app-navbar currentLinkNumber="1"></app-navbar>
   <div class="header-area">
-    <div class="caption">Most Relaxing Place</div>
-    <div class="sub-caption">enjoy your wonderful holidays with a great luxury experience!</div>
-    <div class="button">Explore</div>
-  </div>
-  <div class="container">
-    <div class="main">
-        <div class="top-card-wrapper">
-            <h2>Book now</h2>
-            <div class="inner-card-wrapper">
-                <div class="card" (click)="navigate()">
-                    <div class="icon">
-                        <fa-icon [icon]="faCoffee"></fa-icon>
-                    </div>
-                    <div class="title">Suite Room</div>
-                    <div class="content">Relax in our elegant rooms near the Empire State Building,
-                        Madison Square Garden, the fashion district and so much more. 
-                        Our boutique hotrl has it all.</div>
-                </div>
-                <div class="card" (click)="navigate()">
-                    <div class="icon">
-                        <fa-icon [icon]="faSplotch"></fa-icon>
-                    </div>
-                    <div class="title">Great Street Cafe</div>
-                    <div class="content">Grace Street is a one-of-a-kind Korean dessert cafe located 
-                        in Koreatown, New York serving specialty drinks and handmade desserts.
-                    </div>
-                </div>
-                <div class="card" (click)="navigate()">
-                    <div class="icon">
-                        <fa-icon [icon]="faLayerGroup"></fa-icon>
-                    </div>
-                    <div class="title">Explore our Neighboorhood</div>
-                    <div class="content">Experience the captivating energy of Midtown Manhattan 
-                        from this intimate, boutique location with easy access to Grand Central Station,
-                         Penn Station, and the Port Authority Bus Terminal.</div>
-                </div>
-            </div>
-            <h2>Explore great moment</h2>
-            <div class="inner-card-wrapper">
-                <div class="card" (click)="navigate()">
-                    <img src="../../assets/images/room4.webp" alt="">
-                    <div class="title">Suite Room</div>
-                    <div class="content">
-                        A plush king bed, luxury sheets, and thoughtful amenities make for a comfortable 
-                        and valuable stay in this approximately 280-square-foot Manhattan room.
-                    </div>
-                </div>
-                <div class="card" (click)="navigate()">
-                    <img src="../../assets/images/room2.jpg" alt="">
-                    <div class="title">Deluxe Room</div>
-                    <div class="content">
-                        With a pillow-top king bed, roll-in shower, and approximately 280 
-                        square feet of space in this mobility-accessible room, you’ll be set for a great stay in the city.
-                    </div>
-                </div>
-                <div class="card" (click)="navigate()">
-                    <img src="../../assets/images/room5.webp" alt="">
-                    <div class="title">Family Room</div>
-                    <div class="content">
-                        Expect comfort and relaxation for you and your traveling 
-                        companions in our approximately 300-square-foot standard rooms with two double beds.
-                    </div>
-                </div>
-            </div>
+    <div class="header-overlay">
+      <div class="caption">
+        Berenia Technology <br />
+        <span>
+          We build edge in Technology gaps
+        </span>
+      </div>
+      <div class="sub-caption">
+        <div>
+          We care about your passion and dream <br />
+          Let's build together.
         </div>
+      </div>
+      <div class="button" (click)="contactUs()">Contact us</div>
     </div>
   </div>
+
+  <div class="container">
+    <div class="main">
+      <div class="top-card-wrapper">
+        <div class="inner-card-wrapper">
+          <div
+            class="what-we-do"
+          >
+            What we do
+          </div>
+          <div class="card" (click)="contactUs()">
+            <div class="icon">
+              <!-- <fa-icon [icon]="faSplotch"></fa-icon> -->
+              <app-font-icon
+                iconType="remix"
+                iconName="slideshow-line"
+                iconColor="primary-icon"
+                iconSize="custom"
+              ></app-font-icon>
+            </div>
+            <div class="title">We Build Website</div>
+            <div class="content">
+              We design and create the most intuitive apps in Nigeria with the best quality and user experience. Our mobile apps are designed to meet demands and functionalities.
+            </div>
+          </div>
+          <div class="card" (click)="contactUs()">
+            <div class="icon">
+              <!-- <fa-icon [icon]="faSplotch"></fa-icon> -->
+              <app-font-icon
+                iconType="remix"
+                iconName="device-line"
+                iconColor="primary-icon"
+                iconSize="custom"
+              ></app-font-icon>
+            </div>
+            <div class="title">We Build Mobile App</div>
+            <div class="content">
+              We develop mobile apps that best fit your business and brand. We also give you the support you need to build a stronger
+               online presence by leveraging the Internet and digital space to boost productivity.
+            </div>
+          </div>
+          <div class="card" (click)="contactUs()">
+            <div class="icon">
+              <!-- <fa-icon [icon]="faSplotch"></fa-icon> -->
+              <app-font-icon
+                iconType="remix"
+                iconName="team-line"
+                iconColor="primary-icon"
+                iconSize="custom"
+              ></app-font-icon>
+            </div>
+            <div class="title">We Train and Build Tech Teams</div>
+            <div class="content">
+              We are a team of skilled and experienced professionals in the Instructional Design and E-learning Development world. Join our Academy today.
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial" >
+           <div class="wrapper">
+            <h2>Berenia Academy 2023 intensive web development bootcamp training is here.</h2>
+           
+           <h3 style="text-align: center">
+            That resolution of becoming a tech expert this year is right here for you. 
+           </h3>
+           <div class="button" (click)="contactUs()">Enroll now</div>
+          </div>
+        </div>
+        <div class="course-module">
+          <h2>Our Training Course Module</h2>
+          <div class="inner-card-wrapper">
+            <div class="card" (click)="contactUs()">
+              <img
+                src="../../assets/images/illustrator/undraw_Web_developer_re_h7ie (1).png"
+                alt=""
+              />
+              <div class="title">Basic Web development</div>
+              <div class="content">
+                We have fully packed web development course module that would provide you with all the 
+                needed knowledge to master the foundation of web development beyond the normal.
+              </div>
+            </div>
+            <div class="card" (click)="contactUs()">
+              <img
+                src="../../assets/images/illustrator/undraw_Website_builder_re_ii6e.png"
+                alt=""
+              />
+              <div class="title">Mastering Front-end development</div>
+              <div class="content">
+                To be proficient in web development require mastering of modern tools used in industries. 
+                in this module will teach you the most used framework in front-end development.
+              </div>
+            </div>
+            <div class="card" (click)="contactUs()">
+              <img
+                src="../../assets/images/illustrator/undraw_Maintenance_re_59vn.png"
+                alt=""
+              />
+              <div class="title">Mastering Back-end development</div>
+              <div class="content">
+                This module gives your the capacity to build a proficient backend service. we teach you all the necessary course to become a proficient backend engineer.              </div>
+            </div>
+            <div class="card" (click)="contactUs()">
+              <img
+                src="../../assets/images/illustrator/undraw_Report_re_kp7y (1).png"
+                alt=""
+              />
+              <div class="title">Software Design Pattern and Algorithm</div>
+              <div class="content">
+                To scale up in your develpoment journey, there is a need to understand the 
+                rudiments of software development. this module provides the industrial standard for software design pattern.
+              </div>
+            </div>
+            <div class="card" (click)="contactUs()">
+              <img
+                src="../../assets/images/illustrator/undraw_Blogging_re_kl0d (1).png"
+                alt=""
+              />
+              <div class="title">Mobile App development</div>
+              <div class="content">
+                Learn how to design, build, and publish ios and android mobile apps from scratch using a varieties of tools. 
+                we will take you through the step-by-step cross platform app development process.      
+                       
+              </div>
+            </div>
+            <div class="card" (click)="contactUs()">
+              <img
+                src="../../assets/images/illustrator/undraw_Career_development_re_sv91 (2).png"
+                alt=""
+              />
+              <div class="title">DevOps development</div>
+              <div class="content">
+                <!-- devops is a software development process that helps it organizations become more 
+                agile and able to deliver scalable applications faster. -->
+                 Our DevOps training is beginner-friendly, practical,
+                 and project-based. it is designed to help participants gain mastery of different technologies and tools.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
 </div>

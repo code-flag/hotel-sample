@@ -1,5 +1,6 @@
 .toolbar {
     width: 100%;
+    max-height: 60px;
     position: absolute;
     top: 0;
     display: flex;
@@ -7,16 +8,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(61, 52, 52, 0.3);
+    background-color: rgba(255, 255, 255, 0.658);
+    z-index: 1000;
+    font-weight: 600;
+    // background-color: rgba(61, 52, 52, 0.3);
     // border-bottom: 4px solid rgba(180, 180, 180, 0.75);
     // box-shadow: 10 5px 15px 5px rgba(180, 180, 180, 0.75);
-    padding: 5px 0;
       .menu-icon {
           display: none;
       }
     .logo {
       align-self: center;
-      padding: 10px;
       margin-left: 30px;
 
       img {
@@ -26,14 +28,14 @@
       .t1 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-transform: uppercase;
-        color: #ee5940;
+        color: #072baf;
         font-weight: bold;
         font-size: 26px;
       }
       .t2 {
         font-family: "Poppins";
         text-transform: uppercase;
-        color: #832717;
+        color: #072baf;
         font-weight: 600;
         font-size: 20px;
       }
@@ -44,6 +46,21 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      ul {
+        list-style: none;
+        margin: auto;
+  
+        li {
+          list-style: none;
+          float: left
+        }
+      }
+      a {
+        padding: 0px 10px;
+        background-color: inherit;
+        font-size: 22px;
+        text-decoration: none;
+      }
     }
     .nav-links {
       display: flex;
@@ -65,21 +82,20 @@
   
           a {
             text-decoration: none;
-            color: #fff;
+            color: #041227;
           }
           &.current {
-            border-bottom: 5px solid #dd2b0c;
+            border-bottom: 2px solid #072baf;
             a {
-              
-            color: #eb2b0a;
+            color: #072baf;
             }
           }
           &:hover {
-            background-color: transparent;
-            border-bottom: 5px solid #aa270f;
+            background-color: #ececec94;
+            border-bottom: 2px solid #041227;
   
             a {
-              color: #ee5940;
+              color: #041227;
             }
           }
         }
@@ -144,14 +160,14 @@
           .t1 {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-transform: uppercase;
-            color: #ee5940;
+            color: #072baf;
             font-weight: bold;
             font-size: 22px;
           }
           .t2 {
             font-family: "Poppins";
             text-transform: uppercase;
-            color: #832717;
+            color: #072baf;
             font-weight: 600;
             font-size: 16px;
           }

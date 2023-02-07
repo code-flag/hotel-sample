@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     // background-color: rgba(0, 0, 0, 0.75);
-    background-image: url(../../assets/images/24trending-shophotels1-videoSixteenByNineJumbo1600.jpg);
+    background-image: url('../../assets/images/SVG/bg2.svg');
     height: 300px;
     padding: 100px;
   
@@ -23,18 +23,18 @@
       color: #000;
     }
     .button {
-      margin-top: 30px;
-      background-color: #ff2259;
+      margin-top: 20px;
+      background-color: #fc9c1e;
       color: #fff;
-      padding: 12px 20px;
-      max-width: 100px;
+      padding: 8px 15px;
+      width: fit-content;
       text-align: center;
-      border-radius: 20px;
-  
+      border-radius: 30px;
+    
       &:hover {
         background-color: transparent;
-        border: 1px solid #ff2259;
-        color: #ff2259;
+        border: 1px solid #fc9c1e;
+        color: #fc9c1e;
       }
     }
   }
@@ -43,6 +43,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+  background-image: url(../../assets/images/SVG/bg8.svg);
 
     .form-wrapper {
         display: flex;
@@ -84,16 +86,20 @@
                 box-shadow: 5px 5px 15px 10px #ddd inset;
             }
             .button {
-                max-width: 150px;
-                min-width: 100px;
-                text-align: center;
-                padding: 10px 20px;
-                background-color: #ff2259;
-                color: #000;
-                border-radius: 50px;
-                margin-top: 20px;
-            }
-        }
+              margin-top: 20px;
+              background-color: #fc9c1e;
+              color: #fff;
+              padding: 8px 15px;
+              width: fit-content;
+              text-align: center;
+              border-radius: 30px;
+            
+              &:hover {
+                background-color: transparent;
+                border: 1px solid #fc9c1e;
+                color: #fc9c1e;
+              }
+            }        }
     
     
         .contact-details {
@@ -120,7 +126,6 @@
     display: flex;
     flex-direction: column;
     // background-color: rgba(0, 0, 0, 0.75);
-    background-image: url(../../assets/images/24trending-shophotels1-videoSixteenByNineJumbo1600.jpg);
     height: 300px;
     padding: 100px;
   
@@ -140,18 +145,18 @@
       color: #000;
     }
     .button {
-      margin-top: 30px;
-      background-color: #ff2259;
+      margin-top: 20px;
+      background-color: #fc9c1e;
       color: #fff;
-      padding: 12px 20px;
-      max-width: 100px;
+      padding: 8px 15px;
+      width: fit-content;
       text-align: center;
-      border-radius: 20px;
-  
+      border-radius: 30px;
+    
       &:hover {
         background-color: transparent;
-        border: 1px solid #ff2259;
-        color: #ff2259;
+        border: 1px solid #fc9c1e;
+        color: #fc9c1e;
       }
     }
   }
@@ -201,14 +206,19 @@
                 box-shadow: 5px 5px 15px 10px #ddd inset;
             }
             .button {
-                max-width: 150px;
-                min-width: 100px;
-                text-align: center;
-                padding: 10px 20px;
-                background-color: #ff2259;
-                color: #000;
-                border-radius: 50px;
-                margin-top: 20px;
+              margin-top: 20px;
+              background-color: #fc9c1e;
+              color: #fff;
+              padding: 8px 15px;
+              width: fit-content;
+              text-align: center;
+              border-radius: 30px;
+            
+              &:hover {
+                background-color: transparent;
+                border: 1px solid #fc9c1e;
+                color: #fc9c1e;
+              }
             }
         }
     

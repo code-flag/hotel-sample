@@ -1,0 +1,23 @@
+<button
+  [disabled]="loadingEffect || buttonDisabled"
+  [class]="buttonClassInUse + ' ion-activatable ripple-parent'"
+  (click)="buttonClick ? buttonClick() : null"
+  [id]="id"
+>
+  <!-- <ion-icon
+    *ngIf="showIcon"
+    [class]="iconClassInUse"
+    [slot]="iconSlot"
+    [name]="iconName"
+  >
+  </ion-icon> -->
+
+  <!-- <ion-spinner
+    *ngIf="loadingEffect"
+    color="light"
+    id="loadingEffect"
+    name="bubbles"
+  ></ion-spinner> -->
+
+  {{ title }}
+</button>

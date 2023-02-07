@@ -1,1 +1,28 @@
-<p>footer works!</p>
+<div style="width: 100vw;">
+    <footer class="row">
+        <div class="section col" *ngFor="let item of FooterHeads">
+          <h3 class="section-head">{{ item }}</h3>
+          <div class="links" *ngFor="let detail of footerDetail[item]">
+            <div *ngIf="item == 'Follow Us'">
+              <!-- display social icons -->
+              <div class="links">
+                  <a class="row" [href]="'#'+detail">
+                      <app-font-icon
+                        iconType="remix"
+                        [iconName]="detail.toLowerCase() + '-fill'"
+                        iconColor="primary-icon"
+                        iconSize="custom"
+                        [class]="detail.toLowerCase()"
+                      ></app-font-icon>
+                      {{ detail }}</a
+                    >
+              </div>
+            </div>
+            <!-- display other links -->
+            <div *ngIf="item != 'Follow Us'">
+              <div class="links"><a [href]="'#'+detail">{{ detail }}</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</div>

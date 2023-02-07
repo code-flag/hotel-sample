@@ -1,0 +1,164 @@
+@mixin button-base {
+    width: 90%;
+    min-height: 50px;
+    font-family: 'Poppins';
+    margin: 2px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-self: center;
+    align-self: center;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.button-text-color-white {
+    color: #fff;
+}
+.button-text-color-dark {
+    color: var(--app-dark-color)
+}
+.button-text-color-black {
+    color: #333;
+}
+.button-text-color-main {
+    color: var(--app-base-color);
+}
+.button-text-color-custom {
+    color: inherit;
+}
+
+.button-round {
+    @include button-base;
+    border-radius: 50px;
+}
+
+.button-curve {
+    @include button-base;
+    border-radius: 25px;
+}
+
+.button-flat {
+    @include button-base;
+    border-radius: 0;
+}
+
+.button-dark {
+    --background: var(--app-dark-color);
+}
+
+.button-red{
+    --background: #cc3333;
+}
+
+.button-main {
+    --background: var(--app-base-color);
+
+}
+
+.button-light {
+    --background: var(--app-light-color);
+    color: var(--app-dark-color);
+}
+
+.button-outlined {
+   --background: transparent;
+    color: #000;
+    border: 2px solid #000;
+}
+.button-outlined-main {
+    
+   --background: transparent;
+    color: var(--app-base-color);
+    border: 2px solid var(--app-base-color);
+    font-weight: 600;
+}
+.button-outlined-dark {
+   --background: transparent;
+    color: var(--app-dark-color);
+    border: 2px solid var(--app-dark-color);
+    font-weight: 600;
+}
+.icon-slot-far-start {
+    position: absolute;
+    left: 5px;
+}
+
+.icon-slot-far-end {
+    position: absolute;
+    right: 5px;
+}
+
+ 
+/** Respsonsive styling for tablet */
+@media screen and (min-width: 600px)
+{
+    @mixin button-base {
+        width: 90%;
+        min-height: 55px;
+        font-size: var(--app-tablet-normal-font-size);
+        font-family: 'Poppins';
+        font-weight: 500;
+        margin-left: 40px;
+        margin-right: 20px;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .button-round {
+        @include button-base;
+        border-radius: 100px;
+    }
+    
+    .button-curve {
+        @include button-base;
+        border-radius: 25px;
+    }
+    
+    .button-flat {
+        @include button-base;
+        border-radius: 0;
+    }
+    
+    .button-dark {
+        --background: var(--app-dark-color);
+        color: #fff;
+    }
+    
+    .button-main {
+        --background: var(--app-base-color);
+        color: #fff;
+      
+    }
+    
+    .button-light {
+        --background: var(--app-light-color);
+        color: var(--app-dark-color);
+        &:hover {
+            --background: var(--app-dark-color);
+        }
+    }
+    .button-outlined-main {
+    
+        --background: transparent;
+         color: var(--app-base-color);
+         border: 1px solid var(--app-base-color);
+         font-weight: 600;
+     }
+     .button-outlined-dark {
+        --background: transparent;
+         color: var(--app-dark-color);
+         border: 2px solid var(--app-dark-color);
+         font-weight: 600;
+     }
+    
+    .icon-slot-far-start {
+        position: absolute;
+        left: 5px;
+    }
+    
+    .icon-slot-far-end {
+        position: absolute;
+        right: 5px;
+    }
+}
